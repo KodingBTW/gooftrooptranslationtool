@@ -1,4 +1,4 @@
-This tool allows you to extract the text from the questions in the game "Exodus - Journey to the Promised Land (USA) (v4.0) (Unl)", and then easily reinsert it. The pointer table will be updated automatically.
+This tool allows you to extract the text from the questions in the SNES game "Goof Troop (USA).sfc", and then easily reinsert it. The pointer table will be updated automatically.
 The tool can be found here: https://github.com/KodingBTW/hexstring
 
 ## Usage
@@ -11,9 +11,9 @@ HexString [-d | -e] inFileName outFileName
 Description:
 
 ```
-HexString -d "Exodus - Journey to the Promised Land (USA) (v4.0) (Unl).nes" 0x144F4 0x1F4 0x8010 0x04,0x05,0x06,0x07 "Questions.bin" "decoder.tbl" - Decode text from ROM file.
+HexString -d "Goof Troop (USA).sfc" 0x5E81D 0x64 0x50000 0x00 "Questions.bin" "decoder.tbl" - Decode text from ROM file.
 
-HexString -e "Questions.bin" 0x1007B 4479 0x144F4 0x8010 "Exodus - Journey to the Promised Land (USA) (v4.0) (Unl).nes" "encoder.tbl" - Encode text to ROM file.
+HexString -e "Questions.bin" 0x5E881 111E 0x5E81D 0x50000 "Goof Troop (USA).sfc" "encoder.tbl" - Encode text to ROM file.
 
 -h - Display help
 
@@ -21,7 +21,7 @@ HexString -e "Questions.bin" 0x1007B 4479 0x144F4 0x8010 "Exodus - Journey to th
 ```
 The program doesn't handle many exceptions, so try to provide the correct information to avoid issues. For more information, read the attached readme.txt.
 
-For easier use, I have created 2 batch files. Locate the files in the same directory as the ROM, then use "extractor.bat" to extract the text. It will create a file called "QuestionsText.bin", which you can edit with any text editor; I recommend Notepad++. Then, edit the "encode.tbl" file and modify the table as you wish, adding any new graphics you need. Finally, use "inserter.bat" to insert the text.
+For easier use, I have created 2 batch files. Locate the files in the same directory as the ROM, then use "extractor.bat" to extract the text. It will create a file called "GoofScriptText.bin", which you can edit with any text editor; I recommend Notepad++. Then, edit the "encode.tbl" file and modify the table as you wish, adding any new graphics you need. Finally, use "inserter.bat" to insert the text.
 
 ### Notes
 
