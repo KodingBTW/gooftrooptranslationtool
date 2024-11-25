@@ -1,7 +1,7 @@
 echo "Goof Troop - TextScript Extractor"
 set romName="Goof Troop (USA).sfc"
 set outFile="GoofScriptText.bin"
-set tblFile="decoderG.tbl"
+set tblFile="decoder.tbl"
 set pointersStartAddress=0x5E81D
 set tablePointersSize=0x64
 set headerSize=0x50000
