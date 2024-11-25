@@ -1,4 +1,4 @@
-echo "Goof Troop - TextScript Extractor"
+echo "Goof Troop - Text Script Extractor"
 set romName="Goof Troop (USA).sfc"
 set outFile="GoofScriptText.bin"
 set tblFile="decoder.tbl"
