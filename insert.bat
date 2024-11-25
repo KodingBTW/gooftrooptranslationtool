@@ -1,7 +1,7 @@
 echo "Goof Troop - Text Script Inserter"
 set romName="Goof Troop (USA).sfc"
 set textFile="GoofScriptText.bin"
-set tblFile="encoderG.tbl"
+set tblFile="encoder.tbl"
 set pointersStartAddress=0x5E81D
 set textStartAddress=0x5E881
 set headerSize=0x50000
